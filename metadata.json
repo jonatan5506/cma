@@ -1,0 +1,5 @@
+{
+  "name": "Centro Médico Avançado - Portal",
+  "description": "Um portal abrangente para clínica médica com página inicial, agendamento de consultas para pacientes e administração baseada em cargos (Admin, Médico, Recepcionista).",
+  "requestFramePermissions": []
+}
