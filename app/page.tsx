@@ -73,6 +73,8 @@ const LandingPage: React.FC = () => {
     { name: '+', color: 'bg-slate-700' },
   ];
 
+  if (!mounted) return <div className="min-h-screen bg-white" />;
+
   return (
     <div
       className={`min-h-screen flex flex-col font-sans transition-colors duration-500 ${themeClass}`}
