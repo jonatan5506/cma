@@ -3,12 +3,7 @@
 import * as React from 'react';
 const { useState, useEffect } = React;
 import Link from 'next/link';
-import {
-  CLINIC_NAME,
-  CLINIC_SUBTITLE,
-  DOCTORS_DATA,
-  TREATMENTS,
-} from '../constants';
+import { CLINIC_NAME, CLINIC_SUBTITLE, TREATMENTS } from '../constants';
 
 const LandingPage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -543,17 +538,29 @@ const LandingPage: React.FC = () => {
               C
             </div>
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-700">
-              © 2024 Centro Médico Avançado • Niterói, RJ
+              © {new Date().getFullYear()} Centro Médico Avançado • Niterói, RJ
             </p>
           </div>
-          <div className="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-700">
-            <span className="hover:text-sky-500 transition-colors cursor-help">
-              Política de Privacidade
-            </span>
-            <span className="hover:text-sky-500 transition-colors cursor-help">
-              Termos de Uso
-            </span>
-          </div>
+        </div>
+
+        <div className="relative z-20 mt-12 flex justify-center">
+          <blockquote className="space-y-2">
+            <p className="text-lg text-center">&ldquo;.&rdquo;</p>
+            <footer className="text-center text-sm">
+              Desenvolvido por{' '}
+              <a
+                href="https://argustech.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline transition-all"
+              >
+                Argus{' '}
+                <span className="font-bold" style={{ color: '#0000FF' }}>
+                  Tech
+                </span>
+              </a>
+            </footer>
+          </blockquote>
         </div>
       </footer>
 

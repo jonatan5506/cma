@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
   title: 'Centro Médico Avançado',
@@ -31,6 +32,7 @@ export default function RootLayout({
       </head>
       <body className="bg-gray-50">
         <div id="root">{children}</div>
+        <WhatsAppButton />
       </body>
     </html>
   );
