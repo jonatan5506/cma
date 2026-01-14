@@ -15,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <script src="https://cdn.tailwindcss.com" async></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -26,9 +25,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <style>{`
-          body { font-family: 'Inter', sans-serif; }
-        `}</style>
       </head>
       <body className="bg-gray-50">
         <div id="root">{children}</div>
